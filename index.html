@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section> 
+        <div class="cont">
+            <div class="slider">
+                <div class="slider-line">
+                    <div class="block">
+                        <img src="foto1.webp" alt="">
+                    </div>
+                    <div class="block">
+                        <img src="foto2.jpg" alt="">
+                    </div>
+                    <div class="block">
+                        <img src="foto3.webp" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="arrow">
+                <p class="l"><</p>
+                <p class="r">></p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        let offset = 0;
+        const sliderLine = document.querySelector('.slider-line');
+
+        document.querySelector('.r').addEventListener('click', function(){
+            offset = offset + 1000;
+            if(offset>2000){
+                offset=0
+            }
+            sliderLine.style.left = -offset + 'px'
+        })
+
+        document.querySelector('.l').addEventListener('click', function(){
+            offset = offset - 1000;
+            if(offset<0){
+                offset = 2000
+            }
+            sliderLine.style.left = -offset + 'px'
+        })
+
+    </script>
+</body>
+</html>

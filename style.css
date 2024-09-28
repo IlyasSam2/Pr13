@@ -1,0 +1,52 @@
+/* Четвертый блок ↓↓ */
+
+section{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.slider{
+    overflow: hidden;
+}
+
+.slider-line{
+    width: 3000px;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+    z-index: 10;
+}
+
+.slider .block{
+    width: 1000px;
+    text-align: center;
+}
+
+
+.cont{
+    position: relative;
+    z-index: 1;
+}
+
+.arrow{
+    display: flex;
+    justify-content: space-between;
+    top: 240px;
+    position: absolute;
+    z-index: 10;
+    width: 980px;
+    padding: 0 10px;
+}
+
+.arrow p{
+    color: white;
+    font-size: 36px;
+    padding: 5px 10px;
+    border-radius: 2px;
+    background-color: rgb(143, 255, 180);
+    cursor: pointer;
+}
+
+
+/* Четвертый блок ↑↑ */
